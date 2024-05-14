@@ -1,0 +1,51 @@
+body {
+    line-height: 1.6;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
+.item {
+    display: block;
+    margin: 20px 0;
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        align-items: center;
+        gap: 20px;
+
+    }
+}
+
+.item img {
+    border-radius: 17px;
+}
+
+.item .content .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.max-w2 {
+    max-width: 200px;
+}
+
+.max-w3 {
+    max-width: 300px;
+}
+
+.max-w4 {
+    max-width: 400px;
+}
+.max-w5 {
+    max-width: 500px;
+}
