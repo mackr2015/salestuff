@@ -1,5 +1,6 @@
 body {
     line-height: 1.6;
+    font-size: 17px;
 }
 img {
     display: block;
@@ -16,6 +17,11 @@ h1 {
     font-weight: bold;
 }
 
+h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
 .center {
     text-align: center;
     margin: 0 auto;
@@ -24,14 +30,31 @@ h1 {
 
 .item {
     display: block;
-    margin: 20px 0;
+    margin: 40px 0;
 
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
+        max-width: 550px;
+        margin: 40px auto;
+    }
+
+
+    @media (min-width: 1200px) {
         display: grid;
-        grid-template-columns: 320px 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
+        gap: 25px;
+    }
+   
+    @media (min-width: 1400px) {
+        grid-template-columns: 220px 1fr;
         gap: 20px;
+    }
 
+    @media (min-width: 1600px) {
+        grid-template-columns: 280px 1fr;
+    }
+    @media (min-width: 1780px) {
+        grid-template-columns: 320px 1fr;
     }
 }
 
@@ -39,11 +62,34 @@ h1 {
     border-radius: 17px;
 }
 
-.item .content .price {
-    font-size: 22px;
-    font-weight: bold;
+.item .content {
+    margin-top: 30px;
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
+.item .content .price {
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+
+    @media (min-width: 1200px) {
+        font-size: 22px;
+    }
+}
+
+
+h1 {
+    @media (min-width: 1200px) {
+        font-size: 2.5em;
+    }
+}
+
+.tx-large {
+    font-size: 20px;
+}
 
 .max-w2 {
     max-width: 200px;
@@ -59,3 +105,7 @@ h1 {
 .max-w5 {
     max-width: 500px;
 }
+
+
+
+
