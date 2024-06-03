@@ -65,6 +65,11 @@ h4 {
     border-radius: 17px;
 }
 
+.droped {
+    text-decoration: line-through;
+    color: red;
+    padding-right:15px;
+}
 .item.sold {
     position: relative;
     z-index: 1;
